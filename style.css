@@ -1,0 +1,93 @@
+:root {
+    --color-background:#FAF9F9;
+    --color-text: #555B6E;
+    --color-accent-1: #81b3b0;
+    --color-accent-2: #BEE3DB;
+    --color-accent-3: #f8873c;
+
+}
+html {
+    font-size:  10px;
+    font-family: "Bitter", sans-serif;
+    background-color: var(--color-accent-2);
+    max-width: 80ch;
+    margin: 0 auto;
+      }
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: var(--color-accent-1);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+h4 {
+    text-align: center;
+    color: var(--color-text)
+}
+p, 
+li,
+tr,
+th,
+td {
+line-height: 2;
+letter-spacing: 2px;
+color: var(--color-text)
+}
+body {
+    background-color: var(--color-background);
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+figcaption {
+    border: 1px;
+    text-align: center;
+}
+a {
+    color: var(--color-accent-3)
+}
+/*mobile devices*/
+@media (min-width: 320px) {
+    html {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+/*tablets*/
+@media (min-width: 768px) {
+    html {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+/*laptops and desktops*/
+@media (min-width: 1024px) {
+    html {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 130px;
+    }
+    <style>
+    #mygraph {
+        font-size: 14px;
+        color: black;
+        margin-top: 14px ;
+        text-align: left
+    }
+    div, p {
+       width: auto; 
+       margin: 0 auto;
+       align-items: center;
+       padding: 0 20px 20px 20px;
+       flex: auto;
+    }
+
+}
