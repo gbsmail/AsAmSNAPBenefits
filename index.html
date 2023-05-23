@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian American SNAP Benefits</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        svg {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Number of Asian American Households Using SNAP Benefits in NYC in 2021, By Borough</h1>
+    <div id="dataviz"></div>
+    <script src="script.js"></script>
+    <p id="mygraph">According to the American Community Survey, over 70,000 Asian American households in New York City relied on food stamps in 2021. This number is actually lower than it was in 2020, due to a variety of pandemic-era federal aid programs, said Sophie Collyer, a doctoral student from the Center on Poverty and Social Policy at Columbia University. Federal relief programs stopped poverty rates from sharply increasing during the pandemic, but “the poverty rate in New York City is still well above the national average." And with many of those COVID-era programs expiring, these rates could climb up again. </p>
+</body>
+<style>
+#mygraph {
+    font-size: 14px;
+    color: black;
+    margin-top: 14px ;
+    text-align: left
+}
+div, p {
+   width: auto; 
+   margin: 0 auto;
+   align-items: center;
+   padding: 0 20px 20px 20px;
+   flex: auto;
+}
+    /*mobile devices*/
+@media (min-width: 320px) {
+    html {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+/*tablets*/
+@media (min-width: 768px) {
+    html {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+/*laptops and desktops*/
+@media (min-width: 1024px) {
+    html {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</html>
