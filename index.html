@@ -5,61 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asian American SNAP Benefits</title>
+    <link 
+    href="style.css" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&display=swap" rel="stylesheet" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-        svg {
-            border: 1px solid black;
-        }
-    </style>
 </head>
+
 <body>
-    <h1>The Number of Asian American Households Using SNAP Benefits in NYC in 2021, By Borough</h1>
+    <h1>Asian American Households On Food Stamps in NYC in 2021</h1>
     <div id="dataviz"></div>
     <script src="script.js"></script>
-    <p id="mygraph">According to the American Community Survey, over 70,000 Asian American households in New York City relied on food stamps in 2021. This number is actually lower than it was in 2020, due to a variety of pandemic-era federal aid programs, said Sophie Collyer, a doctoral student from the Center on Poverty and Social Policy at Columbia University. Federal relief programs stopped poverty rates from sharply increasing during the pandemic, but “the poverty rate in New York City is still well above the national average." And with many of those COVID-era programs expiring, these rates could climb up again. </p>
-</body>
+    <p id="mygraph">According to the American Community Survey, over 70,000 Asian American households in New York City relied on food stamps in 2021. 
+        This number is actually lower than it was in 2020, thanks to a variety of pandemic-era federal aid programs, said Sophie Collyer, a doctoral student from the Center on Poverty and Social Policy at Columbia University. </p>
+        <p>But “the poverty rate in New York City is still well above the national average," she cautioned. And with many of those COVID-era programs expiring, these rates could climb up again. </p>
+        <p>
+            <a href="https://data.census.gov/table?q=poverty+new+york+city&g=060XX00US3600508510,3604710022,3606144919,3608160323,3608570915&tid=ACSST1Y2021.S2201"> Data from the 2021 American Community Survey on SNAP.</a>
+            </p>
+    </body>
+
 <style>
-#mygraph {
-    font-size: 14px;
-    color: black;
-    margin-top: 14px ;
-    text-align: left
+    :root {
+    --color-background:#FAF9F9;
+    --color-text: #0a4131;
+    --color-accent-1: #000000;
+    --color-accent-2: #074336;
+    --color-accent-3: #f8873c;
+
 }
-div, p {
-   width: auto; 
-   margin: 0 auto;
-   align-items: center;
-   padding: 0 20px 20px 20px;
-   flex: auto;
+html {
+    font-size:  14px;
+    font-family: "Bitter", sans-serif;
+    background-color: var(--color-accent-2);
+    max-width: 80ch;
+    margin: 0 auto;
+      }
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 14px 0;
+    color: var(--color-accent-1);
 }
-    /*mobile devices*/
-@media (min-width: 320px) {
+h4 {
+    text-align: center;
+    color: var(--color-text)
+}
+p, 
+li,
+tr,
+th,
+td {
+line-height: 2;
+letter-spacing: 2px;
+color: var(--color-text)
+}
+body {
+    background-color: var(--color-background);
+    padding: 0 12px 12px 12px;
+    border: 5px solid black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+figcaption {
+    border: 1px;
+    text-align: center;
+}
+a {
+    color: var(--color-accent-3)
+}
+/*mobile devices*/
+@media (min-width: 220px) {
     html {
         font-size: 22px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
 }
 /*tablets*/
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     html {
         font-size: 28px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
 }
 /*laptops and desktops*/
 @media (min-width: 1024px) {
     html {
-        font-size: 32px;
+        font-size: 20px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 60px;
+    }
+    #mygraph {
+        font-size: 20px;
+        color: black;
+        margin-top: 14px ;
+        text-align: left
+    }
+    div, p {
+       width: auto; 
+       margin: 0 auto;
+       align-items: center;
+       padding: 0 20px 20px 20px;
+       flex: auto;
     }
 }
 </style>
